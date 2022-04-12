@@ -1,0 +1,38 @@
+
+.footer {
+    &__wraper {
+        position: relative;
+        width: 100%;
+        padding: 30px 0 15px;
+        background-color: $background-color;
+        color: $font-light-color;
+    }
+
+    &__button {
+        margin: 0 auto;
+    }
+
+    &__button::before,
+    &__button::after {
+        background-color: $font-light-color;
+    }
+
+    &__button::before {
+        transform: rotate(-45deg);
+    }
+
+    &__button::after {
+        transform: rotate(45deg);
+    }
+
+    &__underline {
+        width: 100%;
+        margin: 40px auto 15px;
+        border-bottom: 1px solid $font-light-color;
+    }
+
+    &__copyright {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}

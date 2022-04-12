@@ -1,0 +1,75 @@
+
+.contact {
+    position: relative;
+    background-color: $accent-color;
+    padding: 80px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__form-wrapper {
+        flex-basis: 570px;
+        padding: 55px 20px 0;
+        margin-right: 70px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    &__info-title {
+        font-family: $title-font;
+        font-size: 5.6rem;
+        color: $background-color;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    &__info-social {
+        max-width: 240px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__social-item {
+        width: 45px;
+        fill: $background-color;
+        transition: all .3s;
+    }
+
+    &__social-item:hover {
+        transform: scale(1.05);
+    }
+
+    &__info-bottom {
+        font-family: $title-font;
+        font-size: 4rem;
+        color: $background-color;
+    }
+
+    &__phone,
+    &__email {
+        display: flex;
+        align-items: center;
+    }
+
+    &__phone {
+        margin-bottom: 30px;
+    }
+
+    &__phone-icon,
+    &__email-icon {
+        width: 45px;
+        margin-right: 20px;
+    }
+
+    &__email-icon {
+        fill: $background-color;
+    }
+}

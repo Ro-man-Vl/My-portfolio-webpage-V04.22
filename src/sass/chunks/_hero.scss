@@ -1,0 +1,127 @@
+
+.hero__accent-background {
+    height: 585px;
+    background-color: $accent-color;
+    transition: all .3s;
+
+    &--active {
+        height: 848px;
+    }
+}
+
+.hero {
+
+    &__content {
+        position: relative;
+        background-color: $background-color;
+        min-height: 178px;
+    }
+
+    &__container {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        transition: all .3s;
+    }
+
+    &__container--active {
+        top: -763px;
+    }
+
+    &__content-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img-wrapper {
+        flex-basis: 555px;
+        margin-right: 7px;
+        height: 678px;
+    }
+
+    &__img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__information-wrapper {
+        flex-basis: 555px;
+        margin-left: 7px;
+        padding-top: 10px;        
+    }
+
+    &__information-quote {
+        margin-left: auto;
+        text-align: right;
+        padding: 0 10px 30px 0;
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 2.2rem;
+        color: $background-color;
+    }
+
+    &__quote-text {
+        position: relative;
+        display: inline-block;
+        max-width: 70%;
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+
+    &__quote-author {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+    &__information-underline {
+        position: relative;
+        display: block;
+        margin: 45px auto 0;
+        width: 350px;
+        border-bottom: 2px solid $background-color;
+    }
+
+    &__information-text {
+        position: relative;
+        max-height: 270px;
+        overflow: hidden;    
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 2.4rem;
+        color: $background-color;
+        text-align: center;
+        padding-right: 12px;
+        transition: all .5s;
+
+        & .simplebar-scrollbar:before {
+            background-color: $background-color;
+            opacity: 0;
+        }
+
+        & .simplebar-scrollbar.simplebar-visible:before {
+            opacity: 0.85;
+        }
+
+        & .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+            top: 5px;
+            bottom: 5px;
+        }
+    }
+
+    &__information-text--active {
+        max-height: 630px;
+        overflow: auto;
+    }
+
+    &__information-button {
+        margin: 20px auto 0;
+        color: $background-color;
+    }
+
+    &__information-button::before,
+    &__information-button::after {
+        background-color: $background-color;
+    }
+}

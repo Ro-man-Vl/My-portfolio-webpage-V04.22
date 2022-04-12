@@ -1,0 +1,42 @@
+
+.service {
+    background-color: $background-color;
+    padding: 90px 0;
+    color: $font-light-color;
+
+    &__wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    &__title {
+        font-family: $title-font;
+        font-size: 10rem;
+        margin-bottom: 0px;
+    }
+
+    &__subtitle {
+        font-family: $title-font;
+        font-size: 9rem;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-family: $text-font;
+        font-size: 2.4rem;
+        line-height: 1.7;
+        letter-spacing: 1px;
+    }
+
+    &__button {
+        margin: 35px auto 0;
+    }
+
+    &__button::before,
+    &__button::after {
+        background-color: $font-light-color;
+    }
+
+
+}

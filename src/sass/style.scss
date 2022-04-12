@@ -1,0 +1,24 @@
+
+@import "chunks/constants";
+@import "chunks/blocks";
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+
+@import "chunks/header";
+@import "chunks/hero";
+@import "chunks/service";
+@import "chunks/projects";
+@import "chunks/contact";
+@import "chunks/contact-form";
+@import "chunks/footer";
